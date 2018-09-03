@@ -1,0 +1,33 @@
+
+
+body {
+ 
+	background-image: url('Optimized-BG_IMG.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
+h1 {
+    text-align: center; 
+	font-size: 5.5em;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px red;
+    color: blue;
+}
+p {
+    color: red;
+    text-shadow: 4px 4px 10px green;
+	font-size: 1.4em;
+}
+
+ol {
+	color: red;
+	font-weight: bold;
+}
+
+ul {
+	color: green;
+    font-weight: bold;
+
+}
