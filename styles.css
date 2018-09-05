@@ -15,6 +15,18 @@ h1 {
     text-shadow: 2px 2px 5px red;
     color: blue;
 }
+
+h2 {
+   color: red;
+   border-radius: 25px;
+   border: 2px solid green;
+   text-align: center;
+}
+
+h3 {
+    color: #BD0D0D;
+}
+
 p {
     color: red;
     text-shadow: 4px 4px 10px green;
