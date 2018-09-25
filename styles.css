@@ -27,9 +27,14 @@ h3 {
     color: #BD0D0D;
 }
 
+h4 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
 p {
     color: red;
-    text-shadow: 4px 4px 10px green;
 	font-size: 1.4em;
 }
 
