@@ -2,7 +2,7 @@
 
 body {
  
-	background-image: url('Optimized-BG_IMG.jpg');
+    background-image: url('Optimized-BG_IMG.jpg');
 	background-repeat: no-repeat;
     background-size: cover;
 	
@@ -16,23 +16,6 @@ h1 {
     color: blue;
 }
 
-h2 {
-   color: red;
-   border-radius: 25px;
-   border: 2px solid green;
-   text-align: center;
-}
-
-h3 {
-    color: #BD0D0D;
-}
-
-h4 {
-    color: white;
-    font-size: 3em;
-    text-align: center;
-}
-
 p {
     color: red;
 	font-size: 1.4em;
@@ -43,8 +26,6 @@ ol {
 	font-weight: bold;
 }
 
-ul {
-	color: green;
-    font-weight: bold;
-
+li {
+  color: red; 
 }
