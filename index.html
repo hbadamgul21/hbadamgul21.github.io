@@ -7,6 +7,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -18,18 +22,32 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <h1>Welcome!</h1>
-<p align="center">Click the button to play The 2D Endless Runner Game: 
-<a href="RunSkelRunGame.html" class="btn btn-primary">Run Skel Run! Game</a>
+<p class="one">Click the button to play The 2D Endless Runner Game: 
+<a href="RunSkelRunGame.html" class="btn btn-primary" title="click me to play">Run Skel Run! Game</a>
 </p>
-<p align="center">Click the button to play The FPS Surviving Game: 
-<a href="FPS Zombie Game/SurviveDerUntoteGame.html" class="btn btn-primary">Survive Der Untote</a>
+<p class="one">Click the button to play The FPS Surviving Game: 
+<a href="FPS Zombie Game/SurviveDerUntoteGame.html" class="btn btn-primary" title="click me to play">Survive Der Untote</a>
 </p>
 <!-- Acknownledgment: https://steamcommunity.com/sharedfiles/filedetails/?id=833634998 -->
-<p>The Flash</p> 
-<img src="flashRUN.gif" style="width:150px;height:50px;">
-                
 
+<p class="run">A Fun Flash GIF: 
+<img src="flashRUN.gif" style="width:150px;height:50px;"> 
+</p>
+<div class="share">
+<div class="fb-share-button" data-href="https://hbadamgul21.github.io/" data-layout="button" data-size="small" data-mobile-iframe="true">
+<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhbadamgul21.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+</div>           
+</div>
 </body>
 </html>
