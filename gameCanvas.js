@@ -43,8 +43,14 @@ function Circle(x, y, dx, dy, radius) {
             if(this.x > x2 && this.x < x2 + W) {
                 this.dy = -this.dy;
             } else {
-                alert("GAME OVER");
-                window.location.reload();
+                //alert("GAME OVER");
+                //window.location.refresh();
+                ctx.font = "30px Arial";
+                ctx.fillText("GAME OVER!", 150, 50);
+                ctx.font = "15px Arial";
+                ctx.fillStyle = "green"
+                ctx.fillText("Refresh Page To Try Again.", 150, 90);
+
 
             }
         }
