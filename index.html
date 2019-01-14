@@ -19,9 +19,15 @@
               enable_page_level_ads: true
          });
     </script>
+<div id="testCanvas"> 
+<canvas id="myCanvas" width="500" height="250"></canvas>
+</div>
+
+<script src="gameCanvas.js"></script>
 
 </head>
 <body>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -38,6 +44,9 @@
 </p>
 <p class="one">Click the button to play The FPS Surviving Game: 
 <a href="FPS Zombie Game/SurviveDerUntoteGame.html" class="btn btn-primary" title="click me to play">Survive Der Untote</a>
+</p>
+<p id="Pong" > Click the button to play a simple
+<a class="btn btn-primary" title="click me to play" onclick="StartGame();">Pong Game</a>
 </p>
 <!-- Acknownledgment: https://steamcommunity.com/sharedfiles/filedetails/?id=833634998 -->
 
