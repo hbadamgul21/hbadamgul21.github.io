@@ -2,7 +2,7 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-var dx2 = 9;
+var dx2 = 10;
 var x2 = 25;
 var y2 = 240;
 var W = 80;
@@ -43,15 +43,12 @@ function Circle(x, y, dx, dy, radius) {
             if(this.x > x2 && this.x < x2 + W) {
                 this.dy = -this.dy;
             } else {
-                //alert("GAME OVER");
-                //window.location.refresh();
                 ctx.font = "30px Arial";
                 ctx.fillText("GAME OVER!", 150, 50);
                 ctx.font = "15px Arial";
                 ctx.fillStyle = "green"
                 ctx.fillText("Refresh Page To Try Again.", 150, 90);
-
-
+                this.radius = 0;
             }
         }
         
