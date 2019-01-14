@@ -2,12 +2,12 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
+
 var dx2 = 10;
 var x2 = 25;
 var y2 = 240;
 var W = 80;
 var H = 10;
-
 
 function Rect(x2,y2,w,h) {
   ctx.beginPath();
@@ -98,5 +98,4 @@ function StartGame() {
   
 }
 
-//animate();
 window.addEventListener('keydown',doKeyDown,true);
