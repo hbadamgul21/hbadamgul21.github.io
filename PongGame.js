@@ -2,19 +2,25 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-
 var dx2 = 10;
 var x2 = 25;
 var y2 = 240;
 var W = 80;
 var H = 10;
 
+//creating the paddle, call it in StartGame function
 function Rect(x2,y2,w,h) {
   ctx.beginPath();
   ctx.rect(x2,y2,w,h);
   ctx.closePath();
   ctx.fill();
 }
+
+var x = c.width/2;
+var y = c.height-90;
+var dx = 4.5;
+var dy = -4.5;
+var radius = 10;
 
 function Circle(x, y, dx, dy, radius) {
     this.x = x;
@@ -59,19 +65,14 @@ function Circle(x, y, dx, dy, radius) {
     }
 }
 
-var x = c.width/2;
-var y = c.height-90;
-var dx = 4.5;
-var dy = -4.5;
-var radius = 10;
-
 var circle = new Circle(x, y, dx, dy, radius);
 
+//clear the canvas when called
 function clear() {
     ctx.clearRect(0,0,c.width,c.height)
 }
 
-
+//keys for left and right arrow functionality
 function doKeyDown(evt){
   switch (evt.keyCode) {
     case 37:  /* Left arrow was pressed */
@@ -87,7 +88,7 @@ function doKeyDown(evt){
   }
 }
 
-
+//Run the game
 function StartGame() {
   requestAnimationFrame(StartGame);
   clear();
