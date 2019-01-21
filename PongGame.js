@@ -9,8 +9,8 @@ var W = 80;
 var H = 10;
 var x = c.width/2;
 var y = c.height-90;
-var dx = 4.5;
-var dy = -4.5;
+var dx = 5;
+var dy = -5;
 var radius = 5;
 var eX = 320;
 var eY = 5;
@@ -68,8 +68,7 @@ function Circle(x, y, dx, dy, radius) {
                 ctx.fillStyle = "green"
                 ctx.fillText("Refresh Page To Try Again.", 120, 150);
                 this.radius = 0;
-                this.dx = 0;
-                //this.dy = 0;
+                this.x = 0;
                 
             }
         } else if(this.y + this.radius > c.height) {
@@ -83,23 +82,22 @@ function Circle(x, y, dx, dy, radius) {
                 ctx.fillStyle = "green"
                 ctx.fillText("Refresh Page To Try Again.", 120, 150);
                 this.radius = 0;
-                this.dx = 0;
-                //this.dy = 0;
+                this.x = 0;
               
             }
         }
-        //Enemy AI movement 
-        if(this.x + this.radius < 145) 
+        //Enemy AI movement
+        if(this.x < eX + dx2) 
         {
-            if (eX - dx2 > 10)
+            if (eX - dx2 > -5) //left movement
             { 
-                eX -= 14;    
+                eX -= 5;    
             } 
-        } else if (this.x + this.radius > 145)
+        } else if (this.x > eX + dx2)
         {
-            if (eX + dx2 < 302)
+            if (eX + dx2 < 325) //right movement 
             { 
-                eX += 14;
+                eX += 5;
             }
         }
         this.x += this.dx;
